@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rubik's Cube Solver (layer by layer)</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+    .blue {
+      background-color: #1426ad;
+    } .red {
+      background-color: #ad1414;
+    } .orange {
+      background-color: #ff9f00;
+    } .green {
+      background-color: #009100;
+    } .white {
+      background-color: #ffffff;
+    } .yellow {
+      background-color: #ffff00;
+    }
+
+    .square {
+      height: 50px;
+      width: 50px;
+      float: left;
+    } .square:hover {
+      background-color: #dedede;
+    }
+
+    .spacer {
+      height: 50px;
+      width: 50px;
+    }
+
+    .side {
+      height: 150px;
+      width: 150px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="side"></div><div id="yellow" class="side">
+    <div class="yellow square"></div><div class="yellow square"></div><div class="yellow square"></div>
+  <br/>
+  <div class="yellow square"></div><div class="yellow square"></div><div class="yellow square"></div>
+  <br/>
+  <div class="yellow square"></div><div class="yellow square"></div><div class="yellow square"></div>
+  </div>
+  <div></div>
+  <div id="orange" class="side">
+    <div class="orange square"></div><div class="orange square"></div><div class="orange square"></div>
+  </div>
+</body>
+</html>
