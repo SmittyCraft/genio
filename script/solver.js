@@ -1,8 +1,11 @@
-    var activeColor = 'white';
-    $('.palette').click(function () {
-      activeColor = $(this).css('backgroundColor');
-    });
+var activeColor = '';
 
-    $('.square').click(function () {
-      $(this).css({backgroundColor: activeColor});
-    });
+$(document).ready(function () {
+  $('.palette').click(function () {
+    activeColor = $(this).css('backgroundColor');
+  });
+
+  $('.square').click(function () {
+    $(this).css({backgroundColor: activeColor});
+  });
+});
