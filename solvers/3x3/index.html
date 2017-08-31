@@ -17,7 +17,6 @@
     } .yellow {
       background-color: #ffff00;
     }
-
     .square {
       height: 50px;
       width: 50px;
@@ -25,7 +24,6 @@
     } .square:hover {
       background-color: #dedede;
     }
-
     .spacer {
       height: 50px;
       width: 50px;
@@ -35,20 +33,28 @@
       height: 150px;
       width: 150px;
       float: left;
+      column-count: 3;
+      column-gap: 0;
     }
   </style>
 </head>
 <body>
-  <div class="side"></div><div id="yellow" class="side">
-    <div class="yellow square"></div><div class="yellow square"></div><div class="yellow square"></div>
-  <br/>
-  <div class="yellow square"></div><div class="yellow square"></div><div class="yellow square"></div>
-  <br/>
-  <div class="yellow square"></div><div class="yellow square"></div><div class="yellow square"></div>
-  </div>
-  <div></div>
-  <div id="orange" class="side">
-    <div class="orange square"></div><div class="orange square"></div><div class="orange square"></div>
-  </div>
+  <table>
+    <tr>
+      <td class="side"></td>
+      <td id="yellow" class="side">
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+        <div class="yellow square"></div>
+      </td>
+      <td class="side"></td>
+    </tr>
+  </table>
 </body>
 </html>
