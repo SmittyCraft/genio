@@ -19,16 +19,16 @@
     }
 
     .square {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       float: left;
     } .square:hover {
       background-color: #dedede;
     }
 
     .side {
-      height: 150px;
-      width: 150px;
+      height: 120px;
+      width: 120px;
       float: left;
       column-count: 3;
       column-gap: 0;
@@ -38,88 +38,100 @@
       background-color: #607d8b;
       padding: 15px;
       box-shadow: 5px 5px 5px #000000;
+      color: #ffffff;
+    }
+
+    .body {
+      font-family: Courier;
+      font-size: 20px;
     }
   </style>
 </head>
-<body>
-  <table class="cube-display">
-    <tr>
-      <td class="side"></td>
-      <td id="yellow" class="side">
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-        <div class="yellow square"></div>
-      </td>
-      <td class="side"></td>
-      <td class="side"></td>
-    </tr>
-    <tr>
-      <td class="side">
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-        <div class="orange square"></div>
-      </td>
-      <td class="side">
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-        <div class="blue square"></div>
-      </td>
-      <td class="side">
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-        <div class="red square"></div>
-      </td>
-      <td class="side">
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-        <div class="green square"></div>
-      </td>
-    </tr>
-    <tr>
-      <td class="side"></td>
-      <td class="side">
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-        <div class="white square"></div>
-      </td>
-      <td class="side"></td>
-    </tr>
-  </table>
+<body class="body">
+  <p>Welcome to Geniô. This is made to solve the Rubik's Cube. At the moment, only three-by-threes are solvable.</p>
+  
+  <p>To begin, set the display to match your cube. To select colors, use the palette at the bottom of the page.</p>
+  <div class="cube-display">
+    <table>
+      <tr>
+        <td class="side"></td>
+        <td id="yellow" class="side">
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+        </td>
+        <td class="side"></td>
+        <td class="side"></td>
+      </tr>
+      <tr>
+        <td class="side">
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+        </td>
+        <td class="side">
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+        </td>
+        <td class="side">
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+        </td>
+        <td class="side">
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="side"></td>
+        <td class="side">
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+        </td>
+        <td class="side"></td>
+      </tr>
+    </table>
+    <p style="color: #ffffff"></p>
+  </div>
 </body>
 </html>
