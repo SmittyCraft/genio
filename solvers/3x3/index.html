@@ -45,6 +45,14 @@
       font-family: Courier;
       font-size: 20px;
     }
+
+    .palette {
+      height: 50px;
+      width: 50px;
+      float: left;
+    } .palette:hover {
+      
+    }
   </style>
 </head>
 <body class="body">
@@ -131,7 +139,27 @@
         <td class="side"></td>
       </tr>
     </table>
-    <p style="color: #ffffff"></p>
+    <p>Palette</p>
+    <div class="palette white"></div>
+    <div class="palette orange"></div>
+    <div class="palette blue"></div>
+    <div class="palette red"></div>
+    <div class="palette green"></div>
+    <div class="palette yellow"></div>
+    <br/>
+    <br/>
+    <br/>
   </div>
+  <script>
+    var activeColor = 'white';
+
+    $('.palette').click(function () {
+      activeColor = $(this).css('backgroundColor');
+    });
+
+    $('.square').click(function () {
+      $(this).css({backgroundColor: activeColor});
+    });
+  </script>
 </body>
 </html>
