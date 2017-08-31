@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rubik's Cube Solver (layer by layer)</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+    .blue {
+      background-color: #1426ad;
+    } .red {
+      background-color: #ad1414;
+    } .orange {
+      background-color: #ff9f00;
+    } .green {
+      background-color: #009100;
+    } .white {
+      background-color: #ffffff;
+    } .yellow {
+      background-color: #ffff00;
+    }
+
+    .square {
+      height: 40px;
+      width: 40px;
+      float: left;
+    } .square:hover {
+      background-color: #dedede;
+    }
+
+    .side {
+      height: 120px;
+      width: 120px;
+      float: left;
+      column-count: 3;
+      column-gap: 0;
+    }
+
+    .cube-display {
+      background-color: #607d8b;
+      padding: 15px;
+      box-shadow: 5px 5px 5px #000000;
+      color: #ffffff;
+    }
+
+    .body {
+      font-family: Courier;
+      font-size: 20px;
+    }
+
+    .palette {
+      height: 50px;
+      width: 50px;
+      float: left;
+    } .palette:hover {
+      
+    }
+  </style>
+</head>
+<body class="body">
+  <p>Welcome to Geniô. This is made to solve the Rubik's Cube. At the moment, only three-by-threes are solvable.</p>
+  
+  <p>To begin, set the display to match your cube. To select colors, use the palette at the bottom of the page.</p>
+  <div class="cube-display">
+    <table>
+      <tr>
+        <td class="side"></td>
+        <td id="yellow" class="side">
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+          <div class="yellow square"></div>
+        </td>
+        <td class="side"></td>
+        <td class="side"></td>
+      </tr>
+      <tr>
+        <td class="side">
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+          <div class="orange square"></div>
+        </td>
+        <td class="side">
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+          <div class="blue square"></div>
+        </td>
+        <td class="side">
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+          <div class="red square"></div>
+        </td>
+        <td class="side">
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+          <div class="green square"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="side"></td>
+        <td class="side">
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+          <div class="white square"></div>
+        </td>
+        <td class="side"></td>
+      </tr>
+    </table>
+    <p>Palette</p>
+    <div class="palette white"></div>
+    <div class="palette orange"></div>
+    <div class="palette blue"></div>
+    <div class="palette red"></div>
+    <div class="palette green"></div>
+    <div class="palette yellow"></div>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+  <script>
+    var activeColor = 'white';
+
+    $('.palette').click(function () {
+      activeColor = $(this).css('backgroundColor');
+    });
+
+    $('.square').click(function () {
+      $(this).css({backgroundColor: activeColor});
+    });
+  </script>
+</body>
+</html>
