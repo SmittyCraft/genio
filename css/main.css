@@ -1,0 +1,44 @@
+    .blue {
+      background-color: #1426ad;
+    } .red {
+      background-color: #ad1414;
+    } .orange {
+      background-color: #ff9f00;
+    } .green {
+      background-color: #009100;
+    } .white {
+      background-color: #ffffff;
+    } .yellow {
+      background-color: #ffff00;
+    }
+    .square {
+      height: 40px;
+      width: 40px;
+      float: left;
+    } .square:hover {
+      background-color: #dedede;
+    }
+    .side {
+      height: 120px;
+      width: 120px;
+      float: left;
+      column-count: 3;
+      column-gap: 0;
+    }
+    .cube-display {
+      background-color: #607d8b;
+      padding: 15px;
+      box-shadow: 5px 5px 5px #000000;
+      color: #ffffff;
+    }
+    .body {
+      font-family: Courier;
+      font-size: 20px;
+    }
+    .palette {
+      height: 50px;
+      width: 50px;
+      float: left;
+    } .palette:hover {
+      box-shadow: 1px 1px 5px #000000;
+    }
