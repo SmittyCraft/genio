@@ -11,6 +11,7 @@
     } .yellow {
       background-color: #ffff00;
     }
+
     .square {
       height: 40px;
       width: 40px;
@@ -18,6 +19,7 @@
     } .square:hover {
       background-color: #dedede;
     }
+
     .side {
       height: 120px;
       width: 120px;
@@ -25,20 +27,33 @@
       column-count: 3;
       column-gap: 0;
     }
+
     .cube-display {
       background-color: #607d8b;
       padding: 15px;
       box-shadow: 5px 5px 5px #000000;
       color: #ffffff;
     }
+
     .body {
       font-family: Courier;
       font-size: 20px;
     }
+
     .palette {
       height: 50px;
       width: 50px;
       float: left;
     } .palette:hover {
       box-shadow: 1px 1px 5px #000000;
+    }
+
+    .standard-button {
+      font-size: 20px;
+      font-family: Courier;
+      background-color: #ffffff;
+      border: none;
+      padding: 5px;
+    } .standard-button:hover {
+      background-color: #dedede;
     }
