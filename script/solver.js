@@ -7,7 +7,6 @@ $(document).ready(function () {
 
   $('.square').click(function () {
     $(this).css({backgroundColor: activeColor});
-    alert(activeColor);
   });
 });
 
@@ -26,7 +25,7 @@ function validateCube () {
 
 $('#solve').click(function () {
   if (validateCube()) {
-    alert('Cube is valid.');
+    
   } else {
     alert('Uh oh, your cube is invalid. Make sure you didn\'t change the color of any center pieces, and that you have nine of each color on the cube.');
   }
