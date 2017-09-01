@@ -27,29 +27,61 @@ function validateCube () {
 // If you don't know how to solve a Rubik's Cube, this cube will make NO sense. I would recommend you understand the Rubik's cube before messing with the code.
 var positions = {
   corners: {
-    wrb: null,
-    wbo: null,
-    wog: null,
-    wgr: null,
-    ybr: null,
-    yrg: null,
-    ygo: null,
-    yob: null
+    wrb: {
+      orientation: 0,
+      position: 0
+    }, wbo: {
+      orientation: 0,
+      position: 0
+    }, wog: {
+      orientation: 0,
+      position: 0
+    }, wgr: {
+      orientation: 0,
+      position: 0
+    }, ybr: {
+      orientation: 0,
+      position: 0
+    }, yrg: {
+      orientation: 0,
+      position: 0
+    }, ygo: {
+      orientation: 0,
+      position: 0
+    }, yob: {
+      orientation: 0,
+      position: 0
+    }
   },
   
   edges: {
-    wr: null,
-    wb: null,
-    wo: null,
-    wg: null,
-    yb: null,
-    yr: null,
-    yg: null,
-    yo: null
+    wr: {
+      orientation: 0,
+      position: 0
+    }, wb: {
+      orientation: 0,
+      position: 0
+    }, wo: {
+      orientation: 0,
+      position: 0
+    }, wg: {
+      orientation: 0,
+      position: 0
+    }, yb: {
+      orientation: 0,
+      position: 0
+    }, yr: {
+      orientation: 0,
+      position: 0
+    }, yg: {
+      orientation: 0,
+      position: 0
+    }, yo: {
+      orientation: 0,
+      position: 0
+    }
   }
 };
-
-
 
 $('#solve').click(function () {
   if (validateCube()) {
